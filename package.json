@@ -1,54 +1,28 @@
 {
   "name": "cra-template-ant-admin",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@craco/craco": "^6.2.0",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@wangeditor/editor": "^0.15.11",
-    "@wangeditor/editor-for-react": "^0.6.23",
-    "antd": "^4.16.7",
-    "axios": "^0.21.1",
-    "craco-less": "^1.18.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "undefsafe": "^2.0.3",
-    "web-vitals": "^1.0.1"
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "cra-template",
+    "antd",
+    "admin"
+  ],
+  "description": "This is a CRA-based background management template, the UI library uses Ant Design.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strivelen/cra-template-ant-admin.git",
+    "directory": "template"
   },
-  "scripts": {
-    "start": "craco start",
-    "build:release": "craco build",
-    "test": "craco test",
-    "generate-mockend": "node ./mockend.config.js",
-    "eject": "react-scripts eject"
+  "engines": {
+    "node": ">=14"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "bugs": {
+    "url": "https://github.com/strivelen/cra-template-ant-admin/issues"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.30.0",
-    "eslint-config-alloy": "^4.1.0",
-    "eslint-plugin-react": "^7.24.0",
-    "http-proxy-middleware": "^2.0.1"
-  }
+  "files": [
+    "template",
+    "template.json"
+  ]
 }
