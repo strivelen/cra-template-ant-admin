@@ -1,6 +1,6 @@
 {
   "name": "cra-template-ant-admin",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "keywords": [
     "react",
     "create-react-app",
@@ -12,14 +12,14 @@
   "description": "This is a CRA-based background management template, the UI library uses Ant Design.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/strivelen/cra-template-ant-admin.git",
+    "url": "https://github.com/strivelen/cra-ant-admin",
     "directory": "template"
   },
   "engines": {
     "node": ">=14"
   },
   "bugs": {
-    "url": "https://github.com/strivelen/cra-template-ant-admin/issues"
+    "url": "https://github.com/strivelen/cra-ant-admin/issues"
   },
   "files": [
     "template",

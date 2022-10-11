@@ -1,0 +1,80 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~antd/dist/antd.less';
+@import './theme.less';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+}
+@keyframes bgp {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+.logo_text {
+  white-space: nowrap;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 32px;
+  font-size: 17px;
+  list-style-type: none;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    #0a98d2,
+    #1ffdc4,
+    #0a98d2,
+    orange,
+    red,
+    orange,
+    #0a98d2,
+    #1ffdc4,
+    #0a98d2,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-size: 200% 100%;
+  animation: bgp 8s infinite linear;
+}
+
+.site-layout {
+  min-height: 100vh;
+  .site-header {
+    padding: 0;
+    background-color: #fff;
+  }
+  .site-menu-trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  .site-content {
+    padding: 8px 16px;
+    overflow: initial;
+    background-color: #fff;
+  }
+}

@@ -1,27 +1,32 @@
 {
   "package": {
     "dependencies": {
-      "@craco/craco": "^6.2.0",
-      "@testing-library/jest-dom": "^5.11.4",
-      "@testing-library/react": "^11.1.0",
-      "@testing-library/user-event": "^12.1.10",
-      "@wangeditor/editor": "^0.15.11",
-      "@wangeditor/editor-for-react": "^0.6.23",
-      "antd": "^4.16.7",
-      "axios": "^0.21.1",
-      "craco-less": "^1.18.0",
-      "react": "^17.0.2",
-      "react-dom": "^17.0.2",
-      "react-router-dom": "^5.2.0",
-      "react-scripts": "4.0.3",
-      "undefsafe": "^2.0.3",
-      "web-vitals": "^1.0.1"
+      "@reduxjs/toolkit": "^1.8.2",
+      "@testing-library/jest-dom": "^5.14.1",
+      "@testing-library/react": "^13.0.0",
+      "@testing-library/user-event": "^13.2.1",
+      "@types/jest": "^27.0.1",
+      "@types/node": "^16.7.13",
+      "@types/react": "^18.0.0",
+      "@types/react-dom": "^18.0.0",
+      "antd": "^4.20.7",
+      "axios": "^0.27.2",
+      "dayjs": "^1.11.3",
+      "less": "^4.1.2",
+      "react": "^18.1.0",
+      "react-dom": "^18.1.0",
+      "react-redux": "^8.0.2",
+      "react-router-dom": "^6.3.0",
+      "redux-persist": "^6.0.0",
+      "strivelen-react-scripts": "5.0.1-4",
+      "type-fest": "^2.13.1",
+      "typescript": "^4.4.2",
+      "web-vitals": "^2.1.0"
     },
     "scripts": {
-      "start": "craco start",
-      "build:release": "craco build",
-      "test": "craco test",
-      "generate-mockend": "node ./mockend.config.js",
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
       "eject": "react-scripts eject"
     },
     "eslintConfig": {
@@ -36,11 +41,17 @@
       ]
     },
     "devDependencies": {
-      "babel-eslint": "^10.1.0",
-      "eslint": "^7.30.0",
-      "eslint-config-alloy": "^4.1.0",
-      "eslint-plugin-react": "^7.24.0",
-      "http-proxy-middleware": "^2.0.1"
+      "husky": "^8.0.1",
+      "lint-staged": "^13.0.0",
+      "prettier": "^2.6.2"
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "lint-staged": {
+      "src/**/*.{js,jsx,ts,tsx,json,css,scss,less,md}": ["prettier --write"]
     }
   }
 }
